@@ -15,10 +15,10 @@ This project deliver Frontend, Backend, and wiring diagram and code for Devices.
 The biggest issue of this project was to find good information about connecting Arduino based devices with SocketIO. I hope that project will help to solve someone problems.
 
 ### Table of Contents
-* [Introduction](#Introduction)
-* [Tecnologies]()
-* [Setup]()
-* [New Device]()
+* [Introduction](#introduction)
+* [Techologies](#techologies)
+* [Setup](#setup)
+* [New Device](#new-device)
 
 ### Technologies
 
