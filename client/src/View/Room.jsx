@@ -36,11 +36,9 @@ export const Room = () => {
   //function that fetch data from server api to data about Rooms
 
   const getRooms = async () => {
-    // let { data } = await axios.get("http://192.168.2.10:3000/api"); // fetch data from api
-    // let { data } = await axios.get("http://192.168.1.10:3000/api"); // fetch data from api
-    // let { data } = await axios.get("http://192.168.1.104:3000/api"); // fetch data from api
-    // let { data } = await axios.get("http://192.168.1.101:3000/api"); // fetch data from api
-    let { data } = await axios.get("http://192.168.1.107:3000/api"); // fetch data from api
+    let { data } = await axios.get(
+      `http://${import.meta.env.VITE_IP}:${import.meta.env.VITE_PORT}/api`
+    ); // fetch data from api
     setRooms(data);
   };
 

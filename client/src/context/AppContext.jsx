@@ -24,12 +24,9 @@ export const AppProvider = ({ children }) => {
   };
 
   const getRooms = async () => {
-    // let { data } = await axios.get("http://192.168.2.10:3000/api");
-    // let { data } = await axios.get("http://192.168.1.10:3000/api");
-    // let { data } = await axios.get("http://192.168.1.104:3000/api");
-    let { data } = await axios.get("http://192.168.1.107:3000/api");
-    // let { data } = await axios.get("http://172.20.160.1:3000/api");
-    // console.log(data);
+    let { data } = await axios.get(
+      `http://${import.meta.env.VITE_IP}:${import.meta.env.VITE_PORT}/api`
+    );
     setRooms(data);
   };
 

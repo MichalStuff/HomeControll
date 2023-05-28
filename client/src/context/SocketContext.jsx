@@ -1,11 +1,7 @@
 import { createContext } from "react";
 import io from "socket.io-client";
 
-// const IP = "http://192.168.2.10";
-// const IP = "http://192.168.1.10";
-// const IP = "http://192.168.1.104";
-// const IP = "http://192.168.1.101";
-const IP = "http://192.168.1.107";
+const IP = `http://${import.meta.env.VITE_IP}`;
 const PORT = 3000;
 const socket = io(`${IP}:${PORT}`);
 
